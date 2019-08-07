@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Űrlap</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <p id="bevezeto">„Réges régen, egy messzi-messzi galaxisban…" - "A long ago in a galaxy far, far away..."</p>
+        <h1 id="cim"> STAR WARS </h1>
+        <br/>
+        <br/>
+        <div id="margo">
+            <div class="kep">
+                <img id="forgat2" src="kepek/zfenykard.jpg"  alt="kard1" width="160" height="42"/>
+            </div>
+            <div class="kep">
+                <img id="forgat1" src="kepek/kfenykard.png" alt="kard2" width="160" height="42"/>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br/><br/>
+
+        <br/>
+
+        <ul>
+            <li><a  href="index.html">Főoldal</a></li>
+            <li><a href="index.html#ugras"> Magyar vonatkozások </a></li>
+            <li><a class="aktiv" href="urlapok.html">Rajongói kérdőívek</a></li>
+        </ul>
+        <br/>
+        <div class="stilus3">
+            <h2>Rajongói kérdőív:</h2>
+            <form action="#" method="post">
+                <label>Kedvenc szereplőd: </label>
+                <sup><i class="fa fa-star" style="font-size:8px; color:red"></i></sup>
+                <input type="checkbox" name="szereplo" value="Obi-Wan Kenobi"><label>Obi-Wan Kenobi</label>
+                <input type="checkbox" name="szereplo1" value="R2-D2" checked><label>R2-D2</label>
+                <input type="checkbox" name="szereplo2" value="Csubakka"><label>Csubakka</label>
+                <input type="checkbox" name="szereplo3" value="Csubakka"><label>Leia Organa </label><br/>
+                <label>Keresztnév: </label>
+                <sup><i class="fa fa-star" style="font-size:8px; color:red"></i></sup>
+                <input type="text" name="kereszt" required><br/>
+                <label>Vezetéknév: </label>
+                <sup><i class="fa fa-star" style="font-size:8px; color:red"></i></sup>
+                <input type="text" name="vezeték" required ><br/>
+                <label>Születési dátum: </label>
+                <input type="date" name="szd" ><br/>
+                <label>E-mail cím: </label>
+                <sup><i class="fa fa-star" style="font-size:8px; color:red"></i></sup>
+                <input type="email" name="email" required><br/>
+                <label>Az eredeti trilógia kedvenc része(i)d: </label>
+                <select name="reszek" size="2">
+                    <option>IV. rész– Egy új remény</option>
+                    <option>V. rész– A Birodalom visszavág</option>
+                    <option>VI. rész –A Jedi visszatér</option>
+                </select><br/>	
+                <label>Vélemény: </label>
+                <textarea name="vm" rows="5" cols="50" ></textarea><br/><br/>
+                <input type="submit" value="Kérdőív elküldése">
+                <input type="reset" value="Újrakezdés"><br/><br/>
+                <sup><i class="fa fa-star" style="font-size:8px; color:red"></i></sup><span> :kötelező kitölteni</span>
+            </form>
+        </div>
+
+        <div class="stilus4">
+            <span>Forrás:</span>
+            <a href="https://hu.wikipedia.org/wiki/Csillagok_h%C3%A1bor%C3%BAj">WIKIPÉDIA</a>
+        </div>
+    </body>
+</html>
